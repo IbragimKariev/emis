@@ -1,0 +1,40 @@
+.custom-table{border-collapse:collapse;width:100%;border:solid 1px #c0c0c0;font-family:open sans;font-size:11px}
+.custom-table th,.custom-table td{text-align:left;padding:8px;border:solid 1px #c0c0c0}
+.custom-table th{color:#000080}
+.custom-table tr:nth-child(odd){background-color:#f7f7ff}
+.custom-table>thead>tr{background-color:#dde8f7!important}
+.tbtn, .delete, .save, .edit{border:0;outline:0;background-color:transparent;font-size:13px;cursor:pointer}
+.toggler{display:none}
+.toggler1{display:table-row;}
+.custom-table a{color: #0033cc;}
+.custom-table a:hover{color: #f00;}
+.page-header{background-color: #eee;}
+.data input{
+    width: 100px;
+}
+.in-table-buttons{
+    display: flex;
+}
+.in-table-buttons {
+    padding: 0;
+}
+.in-table-buttons li{
+   list-style: none;
+}
+.in-table-buttons li .btn{
+    padding: 5px;
+    border-radius: 3px;
+    background: #f7f7ff;
+    box-shadow: none;
+    margin: 5px;
+    border: 1px solid #000000;
+}
+/*Not Required*/
+/*Not Required*/
+.btn{margin-bottom:15px;}
+/*Required*/
+@media (max-width: 576px){.modal-dialog.modal-dialog-slideout {width: 80%}}
+.modal-dialog-slideout {min-height: 100%; margin: 0 auto 0 0 ;background: #fff;}
+.modal.fade .modal-dialog.modal-dialog-slideout {-webkit-transform: translate(-100%,0);transform: translate(-100%,0);}
+.modal.fade.show .modal-dialog.modal-dialog-slideout {-webkit-transform: translate(0,0);transform: translate(0,0);flex-flow: column;}
+.modal-dialog-slideout .modal-content{border: 0;}
