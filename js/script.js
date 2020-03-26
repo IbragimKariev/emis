@@ -72,3 +72,7 @@ $(function() {
         $(target).show();
     });
 });
+$('.deleteit').on('click', function(event) {
+    $(this).parents('.documents_table').remove();
+});
+
