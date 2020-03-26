@@ -6,12 +6,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <body>
 <div class="modal fade" id="Modal-Wind" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
      aria-hidden="true">
@@ -42,373 +44,523 @@
     <section id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-md-2">
                     <div class="container">
 
                     </div>
                 </div>
-                <div class="col-lg-10">
-                    <div class="notices">
-                        <h5>Уведомления</h5>
-                    </div>
-                    <div class="table-class">
-                    <h5>Классы</h5>
-                    <div class="tabs">
-                        <div class="tab-button-outer">
-                            <ul id="tab-button">
-                                <li><a href="#tab01">1 класс</a></li>
-                                <li><a href="#tab02">2 класс</a></li>
-                                <li><a href="#tab03">3 класс</a></li>
-                                <li><a href="#tab04">4 класс</a></li>
-                                <li><a href="#tab05">5 класс</a></li>
-                                <li><a href="#tab06">6 Класс</a></li>
-                                <li><a href="#tab07">7 Класс</a></li>
-                                <li><a href="#tab08">8 Класс</a></li>
-                                <li><a href="#tab09">9 Класс</a></li>
-                                <li><a href="#tab10">10 Класс</a></li>
-                                <li><a href="#tab11">11 Класс</a></li>
-                            </ul>
-                        </div>
-                        <div class="tab-select-outer">
-                            <select id="tab-select">
-                                <option value="#tab01">1 Класс</option>
-                                <option value="#tab02">2 Класс</option>
-                                <option value="#tab03">3 Класс</option>
-                                <option value="#tab04">4 Класс</option>
-                                <option value="#tab05">5 Класс</option>
-                                <option value="#tab06">6 Класс</option>
-                                <option value="#tab07">7 Класс</option>
-                                <option value="#tab08">8 Класс</option>
-                                <option value="#tab09">9 Класс</option>
-                                <option value="#tab10">10 Класс</option>
-                                <option value="#tab11">11 Класс</option>
-                            </select>
-                        </div>
+                <div class="col-md-10">
 
-                        <div id="tab01" class="tab-contents">
 
-                            <div class="owl-carousel owl-theme owl-loaded owl-drag card">
-                                <div class="owl-stage-outer wrapperr ">
-                                    <ul class="owl-stage tab-container nav nav-pills">
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
+                    <table class="custom-table">
+                        <thead>
+                        <tr>
+                            <th>Идентификатор ИСУО</th>
+                            <th>Учащийся(ФИО)</th>
+                            <th>Образование класс</th>
+                            <th>Класс</th>
 
-                                    </ul>
+                            <th>Статус</th>
+                            <th>Действие</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="data id-number">12342342</td>
+                            <td class="data name-human">Алмазбеков бекболот</td>
+                            <td class="data h-class"> 8 класс</td>
+                            <td class="data c-class">"А" класс</td>
+
+                            <td class="data h-status">Зачислен</td>
+                            <td class="page-header">
+                                <button class="save"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                                <button class="edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                </button>
+
+                                <button type="button" class="delete"><i class="fa fa-trash-o"
+                                                                        aria-hidden="true"></i></button>
+
+                                <button type="button" class="tbtn"><i class="fa fa-eye" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="toggler" style="width: 100%">
+                            <td colspan="6">
+
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#taball">Общие</a></li>
+                                    <li><a data-toggle="tab" href="#tabacadem">Академический</a></li>
+                                    <li><a data-toggle="tab" href="#tabvacation">Сотр. в отпуске</a></li>
+                                    <li><a data-toggle="tab" href="#tabskills">Проф.навыки</a></li>
+                                    <li><a data-toggle="tab" href="#tabconsult">Консультирование</a></li>
+                                    <li><a data-toggle="tab" href="#tabfinance">Финансы</a></li>
+                                    <li><a data-toggle="tab" href="#tabhealth">Здоровье</a></li>
+                                    <li><a data-toggle="tab" href="#tabneeds">Особые потребности</a></li>
+                                    <li><a data-toggle="tab" href="#tabvizits">Визиты</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div id="taball" class="tab-pane fade in active">
+                                        <div>
+
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a data-toggle="tab" href="#tabview">Обзор</a></li>
+                                                <li><a data-toggle="tab" href="#tabaccount">Учетная запись</a></li>
+                                                <li><a data-toggle="tab" href="#tabdoc">Документы</a></li>
+                                                <li><a data-toggle="tab" href="#tabcitizenship">Гражданство</a></li>
+                                                <li><a data-toggle="tab" href="#tabcontacts">Контакты</a></li>
+                                                <li><a data-toggle="tab" href="#tablang">Языки</a></li>
+                                                <li><a data-toggle="tab" href="#tabfiles">Файлы</a></li>
+                                                <li><a data-toggle="tab" href="#tabcomments">Комментарии</a></li>
+                                                <li><a data-toggle="tab" href="#tabfam">Родители/Опекун</a></li>
+                                                <li><a data-toggle="tab" href="#tabtransport">Транспорт</a></li>
+                                            </ul>
+
+                                            <div class="tab-content">
+                                                <div id="tabview" class="tab-pane fade in active container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="idisuo">Идентификатор ИСУО</label>
+                                                            <input class="form-control" id="idisuo" name="idisuo"
+                                                                   type="text" value="12313">
+                                                        </div>
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="name-human">Имя</label>
+                                                            <input id="name-human" class="form-control"
+                                                                   name="name-human" type="text" value="имя">
+                                                        </div>
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="patronymic">Отчество</label>
+                                                            <input id="patronymic" class="form-control"
+                                                                   name="patronymic" type="text" value="Отчество">
+                                                        </div>
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="Third-name">Третье имя</label>
+                                                            <input class="form-control" id="Third-name"
+                                                                   name="Third-name" type="text" value="Третье имя">
+                                                        </div>
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="Surname">Фамилия</label>
+                                                            <input id="Surname" class="form-control" name="Surname"
+                                                                   type="text" value="Фамилия">
+                                                        </div>
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="human_sex">Пол</label>
+
+                                                            <select class="form-control" name="human_sex"
+                                                                    id="human_sex">
+                                                                <option value="male">Муж</option>
+                                                                <option value="female">Жен</option>
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="date_brth">Дата рождения</label>
+                                                            <input class="form-control" id="date_brth" name="date_brth"
+                                                                   type="text" value="Дата рождения">
+                                                        </div>
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="h_citizenship">Гражданство</label>
+                                                            <input class="form-control" id="h_citizenship"
+                                                                   name="h_citizenship" type="text" value="Гражданство">
+                                                        </div>
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="type_doc">Вид документа</label>
+                                                            <input class="form-control" id="type_doc" name="type_doc"
+                                                                   type="text" value="Вид документа">
+                                                        </div>
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="num_doc">Номер документа</label>
+                                                            <input class="form-control" id="num_doc" name="num_doc"
+                                                                   type="text" value="Номер документа">
+                                                        </div>
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="h_email">Эл. почта</label>
+                                                            <input class="form-control" id="h_email" name="h_email"
+                                                                   type="text" value="Эл. почта">
+                                                        </div>
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="h_adress">Адрес</label>
+                                                            <input class="form-control" id="h_adress" name="h_adress"
+                                                                   type="text" value="Адрес">
+                                                        </div>
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="mail_index">Почтовый индекс</label>
+                                                            <input id="mail_index" class="form-control"
+                                                                   name="mail_index" type="text"
+                                                                   value="Почтовый индекс">
+                                                        </div>
+                                                        <div class="col-md-2 form-group" 2>
+                                                            <label for="modified">Модифициравано</label>
+                                                            <input class="form-control" id="modified" name="location"
+                                                                   type="text" value="Модифициравано">
+                                                        </div>
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="date_modified">Дата модификации</label>
+                                                            <input class="form-control" id="date_modified"
+                                                                   name="location" type="text" value="Дата модификации">
+                                                        </div>
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="created">Создано</label>
+                                                            <input class="form-control" id="created" name="location"
+                                                                   type="text" value="Создано">
+                                                        </div>
+                                                        <div class="col-md-2 form-group">
+                                                            <label for="date_created">Дата создания</label>
+                                                            <input class="form-control" id="date_created"
+                                                                   name="location" type="text" value="Дата создания">
+                                                        </div>
+                                                        <div class="col-md-2 form-group" style="">
+                                                            <button type="button" class="btn btn-primary form-control"
+                                                                    style="margin-bottom: 0;margin-top: 20px">Сохранить
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="tabaccount" class="tab-pane fade container-fluid">
+                                                    учетная запись
+                                                </div>
+                                                <div id="tabdoc" class="tab-pane fade container-fluid">
+                                                    <table class="table">
+                                                        <thead>
+                                                        <tr>
+                                                            <th scope="col">Вид документа</th>
+                                                            <th scope="col">Гражданство</th>
+                                                            <th scope="col">Номер</th>
+                                                            <th scope="col">Дата выдачи</th>
+                                                            <th scope="col">Действителен до</th>
+                                                            <th scope="col">Составитель</th>
+                                                            <th scope="col">Действие</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                        <tr class="documents_table">
+                                                            <td class="data ">ID Карта</td>
+                                                            <td class="data">Кыргызстан</td>
+                                                            <td class="data "> KX-1234566</td>
+                                                            <td class="data ">26.06.2017</td>
+
+                                                            <td class="data ">26.06.2017</td>
+                                                            <td class="data ">кто то</td>
+                                                            <td class="page-header">
+                                                                <button class="save"><i class="fa fa-floppy-o"
+                                                                                        aria-hidden="true"></i></button>
+                                                                <button class="edit"><i class="fa fa-pencil-square-o"
+                                                                                        aria-hidden="true"></i>
+                                                                </button>
+
+                                                                <button type="button" class="deleteit"><i
+                                                                        class="fa fa-trash-o"
+                                                                        aria-hidden="true"></i></button>
+
+                                                                <button type="button" class="tbtn"><i class="fa fa-eye"
+                                                                                                      aria-hidden="true"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="documents_table">
+                                                            <td class="data ">ID Карта</td>
+                                                            <td class="data">Кыргызстан</td>
+                                                            <td class="data "> KX-1234566</td>
+                                                            <td class="data ">26.06.2017</td>
+
+                                                            <td class="data ">26.06.2017</td>
+                                                            <td class="data ">кто то</td>
+                                                            <td class="page-header">
+                                                                <button class="save"><i class="fa fa-floppy-o"
+                                                                                        aria-hidden="true"></i></button>
+                                                                <button class="edit"><i class="fa fa-pencil-square-o"
+                                                                                        aria-hidden="true"></i>
+                                                                </button>
+
+                                                                <button type="button" class="deleteit"><i
+                                                                        class="fa fa-trash-o"
+                                                                        aria-hidden="true"></i></button>
+
+                                                                <button type="button" class="tbtn"><i class="fa fa-eye"
+                                                                                                      aria-hidden="true"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div id="tabcitizenship" class="tab-pane fade">
+                                                    <h3>Tab 2</h3>
+                                                    <p>Content for tab 2.</p>
+                                                </div>
+                                                <div id="tabcontacts" class="tab-pane fade">
+                                                    <h3>Tab 2</h3>
+                                                    <p>Content for tab 2.</p>
+                                                </div>
+                                                <div id="tablang" class="tab-pane fade">
+                                                    <h3>Tab 2</h3>
+                                                    <p>Content for tab 2.</p>
+                                                </div>
+                                                <div id="tabfiles" class="tab-pane fade">
+                                                    <h3>Tab 2</h3>
+                                                    <p>Content for tab 2.</p>
+                                                </div>
+                                                <div id="tabcomments" class="tab-pane fade">
+                                                    <h3>Tab 2</h3>
+                                                    <p>Content for tab 2.</p>
+                                                </div>
+                                                <div id="tabfam" class="tab-pane fade">
+                                                    <h3>Tab 2</h3>
+                                                    <p>Content for tab 2.</p>
+                                                </div>
+                                                <div id="tabtransport" class="tab-pane fade">
+                                                    <h3>Tab 2</h3>
+                                                    <p>Content for tab 2.</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div id="tabacadem" class="tab-pane fade">
+
+
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#tab11">Tab 1</a></li>
+                                            <li><a data-toggle="tab" href="#tab21">Tab 2</a></li>
+                                            <li><a data-toggle="tab" href="#tab31">Tab 3</a></li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div id="tab11" class="tab-pane fade in active">
+                                                <h3>Tab 1</h3>
+                                                <p>Content for tab 1.</p>
+                                            </div>
+                                            <div id="tab21" class="tab-pane fade">
+                                                <h3>Tab 2</h3>
+                                                <p>Content for tab 2.</p>
+                                            </div>
+                                            <div id="tab31" class="tab-pane fade">
+                                                <h3>Tab 3</h3>
+                                                <p>Content for tab 3.</p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div id="tabvacation" class="tab-pane fade">
+
+
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#tab11">Tab 1</a></li>
+                                            <li><a data-toggle="tab" href="#tab21">Tab 2</a></li>
+                                            <li><a data-toggle="tab" href="#tab31">Tab 3</a></li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div id="tab11" class="tab-pane fade in active">
+                                                <h3>Tab 1</h3>
+                                                <p>Content for tab 1.</p>
+                                            </div>
+                                            <div id="tab21" class="tab-pane fade">
+                                                <h3>Tab 2</h3>
+                                                <p>Content for tab 2.</p>
+                                            </div>
+                                            <div id="tab31" class="tab-pane fade">
+                                                <h3>Tab 3</h3>
+                                                <p>Content for tab 3.</p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div id="tabskills" class="tab-pane fade">
+
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#tab11">Tab 1</a></li>
+                                            <li><a data-toggle="tab" href="#tab21">Tab 2</a></li>
+                                            <li><a data-toggle="tab" href="#tab31">Tab 3</a></li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div id="tab11" class="tab-pane fade in active">
+                                                <h3>Tab 1</h3>
+                                                <p>Content for tab 1.</p>
+                                            </div>
+                                            <div id="tab21" class="tab-pane fade">
+                                                <h3>Tab 2</h3>
+                                                <p>Content for tab 2.</p>
+                                            </div>
+                                            <div id="tab31" class="tab-pane fade">
+                                                <h3>Tab 3</h3>
+                                                <p>Content for tab 3.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div id="tabconsult" class="tab-pane fade">
+
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#tab11">Tab 1</a></li>
+                                            <li><a data-toggle="tab" href="#tab21">Tab 2</a></li>
+                                            <li><a data-toggle="tab" href="#tab31">Tab 3</a></li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div id="tab11" class="tab-pane fade in active">
+                                                <h3>Tab 1</h3>
+                                                <p>Content for tab 1.</p>
+                                            </div>
+                                            <div id="tab21" class="tab-pane fade">
+                                                <h3>Tab 2</h3>
+                                                <p>Content for tab 2.</p>
+                                            </div>
+                                            <div id="tab31" class="tab-pane fade">
+                                                <h3>Tab 3</h3>
+                                                <p>Content for tab 3.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div id="tabfinance" class="tab-pane fade">
+
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#tab11">Tab 1</a></li>
+                                            <li><a data-toggle="tab" href="#tab21">Tab 2</a></li>
+                                            <li><a data-toggle="tab" href="#tab31">Tab 3</a></li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div id="tab11" class="tab-pane fade in active">
+                                                <h3>Tab 1</h3>
+                                                <p>Content for tab 1.</p>
+                                            </div>
+                                            <div id="tab21" class="tab-pane fade">
+                                                <h3>Tab 2</h3>
+                                                <p>Content for tab 2.</p>
+                                            </div>
+                                            <div id="tab31" class="tab-pane fade">
+                                                <h3>Tab 3</h3>
+                                                <p>Content for tab 3.</p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div id="tabhealth" class="tab-pane fade">
+
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#tab11">Tab 1</a></li>
+                                            <li><a data-toggle="tab" href="#tab21">Tab 2</a></li>
+                                            <li><a data-toggle="tab" href="#tab31">Tab 3</a></li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div id="tab11" class="tab-pane fade in active">
+                                                <h3>Tab 1</h3>
+                                                <p>Content for tab 1.</p>
+                                            </div>
+                                            <div id="tab21" class="tab-pane fade">
+                                                <h3>Tab 2</h3>
+                                                <p>Content for tab 2.</p>
+                                            </div>
+                                            <div id="tab31" class="tab-pane fade">
+                                                <h3>Tab 3</h3>
+                                                <p>Content for tab 3.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div id="tabneeds" class="tab-pane fade">
+
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#tab11">Tab 1</a></li>
+                                            <li><a data-toggle="tab" href="#tab21">Tab 2</a></li>
+                                            <li><a data-toggle="tab" href="#tab31">Tab 3</a></li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div id="tab11" class="tab-pane fade in active">
+                                                <h3>Tab 1</h3>
+                                                <p>Content for tab 1.</p>
+                                            </div>
+                                            <div id="tab21" class="tab-pane fade">
+                                                <h3>Tab 2</h3>
+                                                <p>Content for tab 2.</p>
+                                            </div>
+                                            <div id="tab31" class="tab-pane fade">
+                                                <h3>Tab 3</h3>
+                                                <p>Content for tab 3.</p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div id="tabvizits" class="tab-pane fade">
+
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#tab11">Tab 1</a></li>
+                                            <li><a data-toggle="tab" href="#tab21">Tab 2</a></li>
+                                            <li><a data-toggle="tab" href="#tab31">Tab 3</a></li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div id="tab11" class="tab-pane fade in active">
+                                                <h3>Tab 1</h3>
+                                                <p>Content for tab 1.</p>
+                                            </div>
+                                            <div id="tab21" class="tab-pane fade">
+                                                <h3>Tab 2</h3>
+                                                <p>Content for tab 2.</p>
+                                            </div>
+                                            <div id="tab31" class="tab-pane fade">
+                                                <h3>Tab 3</h3>
+                                                <p>Content for tab 3.</p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
                                 </div>
+                            </td>
+                        </tr>
 
-                            </div>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <td class="data id-number">12342342</td>
+                            <td class="data name-human">Алмазбеков бекболот</td>
+                            <td class="data h-class"> 8 класс</td>
+                            <td class="data c-class">"А" класс</td>
 
-                        </div>
-                        <div id="tab02" class="tab-contents">
+                            <td class="data h-status">Зачислен</td>
+                            <td class="page-header">
+                                <button class="save"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                                <button class="edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                </button>
 
-                            <div class="owl-carousel owl-theme owl-loaded owl-drag card">
-                                <div class="owl-stage-outer wrapperr ">
-                                    <ul class="owl-stage tab-container nav nav-pills">
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">б</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">б</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">б</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">б</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">б</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">б</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">б</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">б</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">б</span><span class="name-class">"А"</span> Класс</a>
+                                <button type="button" class="delete"><i class="fa fa-trash-o"
+                                                                        aria-hidden="true"></i></button>
 
-                                    </ul>
-                                </div>
+                                <button type="button" class="tbtn"><i class="fa fa-eye" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="toggler" style="width: 100%">
+                            <td colspan="6">
+                                <ul class="in-table-buttons">
+                                    <li>
+                                        <button type="button" class="btn" data-toggle="modal" data-target="#Modal-Wind">
+                                            Общее
+                                        </button>
+                                    </li>
+                                </ul>
 
-                            </div>
-                        </div>
-                        <div id="tab03" class="tab-contents">
-                            <div class="owl-carousel owl-theme owl-loaded owl-drag card">
-                                <div class="owl-stage-outer wrapperr ">
-                                    <ul class="owl-stage tab-container nav nav-pills">
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
+                            </td>
+                        </tr>
 
-                                    </ul>
-                                </div>
+                        </tbody>
 
-                            </div>
-                        </div>
-                        <div id="tab04" class="tab-contents">
-                            <div class="owl-carousel owl-theme owl-loaded owl-drag card">
-                                <div class="owl-stage-outer wrapperr ">
-                                    <ul class="owl-stage tab-container nav nav-pills">
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
+                    </table>
 
-                                    </ul>
-                                </div>
 
-                            </div>
-
-                        </div>
-                        <div id="tab05" class="tab-contents">
-                            <div class="owl-carousel owl-theme owl-loaded owl-drag card">
-                                <div class="owl-stage-outer wrapperr ">
-                                    <ul class="owl-stage tab-container nav nav-pills">
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div id="tab06" class="tab-contents">
-                            <div class="owl-carousel owl-theme owl-loaded owl-drag card">
-                                <div class="owl-stage-outer wrapperr ">
-                                    <ul class="owl-stage tab-container nav nav-pills">
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div id="tab07" class="tab-contents">
-                            <div class="owl-carousel owl-theme owl-loaded owl-drag card">
-                                <div class="owl-stage-outer wrapperr ">
-                                    <ul class="owl-stage tab-container nav nav-pills">
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-
-                                    </ul>
-                                </div>
-
-                            </div> </div>
-                        <div id="tab08" class="tab-contents">
-                            <div class="owl-carousel owl-theme owl-loaded owl-drag card">
-                                <div class="owl-stage-outer wrapperr ">
-                                    <ul class="owl-stage tab-container nav nav-pills">
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div id="tab09" class="tab-contents">
-                            <div class="owl-carousel owl-theme owl-loaded owl-drag card">
-                                <div class="owl-stage-outer wrapperr ">
-                                    <ul class="owl-stage tab-container nav nav-pills">
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div id="tab10" class="tab-contents">
-                            <div class="owl-carousel owl-theme owl-loaded owl-drag card">
-                                <div class="owl-stage-outer wrapperr ">
-                                    <ul class="owl-stage tab-container nav nav-pills">
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div id="tab11" class="tab-contents">
-                            <div class="owl-carousel owl-theme owl-loaded owl-drag card">
-                                <div class="owl-stage-outer wrapperr ">
-                                    <ul class="owl-stage tab-container nav nav-pills">
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-                                        <a class="owl-item" href="#" data-toggle="tab"><span
-                                                class="num-class">1</span><span class="name-class">"А"</span> Класс</a>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                    <div class="infographics">
-                        <div class="container-fluid">
-                            <div class="row">
-                            <div class="col-md-6"><div class="info-block"></div></div>
-                            <div class="col-md-6"><div class="info-block"></div></div>
-                            <div class="col-md-6"><div class="info-block"></div></div>
-                                <div class="col-md-6"><div class="info-block"></div></div>
-                        </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -417,42 +569,12 @@
     </section>
 </main>
 
-<script>
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        dots: false,
-        loop: true,
-        autoHeight: true,
-        nav: true,
-        navText: [
-            '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
-            '<i class="fa fa-chevron-right" aria-hidden="true"></i>'
-        ],
-        responsive: {
-            375: {
-                items: 3
-            },
 
-            600: {
-                items: 3
-            },
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-            1024: {
-                items: 4
-            },
-
-            1366: {
-                items: 7
-            },
-            1500: {
-                items: 9
-            }
-        }
-    });
-
-</script>
-<script src="js/owl.carousel.js"></script>
-<script src="js/owl.carousel.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
 
